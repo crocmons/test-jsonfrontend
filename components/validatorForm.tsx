@@ -59,7 +59,7 @@ const ValidatorForm = () => {
             rows={5}
             value={data}
             onChange={(e) => setData(e.target.value)}
-            placeholder='Example: Fiona is 25 years old..She is a software developer....'
+            placeholder='Example: Fiona is 20 years old..She is a software developer....'
           ></textarea>
         </div>
         <div>
@@ -72,10 +72,9 @@ const ValidatorForm = () => {
             value={format}
             onChange={(e) => setFormat(e.target.value)}
             placeholder='Example: {
-                  name: { type: "string" },
-                  age: { type: "number" },
-                 
-                }'
+            "name": {"type": "string"}, 
+            "age": {"type": "number"}
+            }'
           ></textarea>
         </div>
         <div>
